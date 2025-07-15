@@ -1,5 +1,5 @@
-local function jenkins_hash(keey: Vector3): number
-	local keyStr = keey.X..keey.Y..keey.Z
+local function jenkins_hash(num:number): number
+	local keyStr = tostring(number)
 	local l = 0
 	local h = 0
 	for i = 1, #keyStr do
