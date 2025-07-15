@@ -1,5 +1,5 @@
 local function jenkins_hash(num:number): number
-	local keyStr = tostring(number)
+	local keyStr = tostring(num)
 	local l = 0
 	local h = 0
 	for i = 1, #keyStr do
