@@ -1,4 +1,5 @@
-local function jenkins_hash(num:number): number
+local function jenkins_hash(num:number?|string?): number
+	if typeof(num) ~= 'string' and typeof(num) ~= 'number' then return num end
 	local keyStr = tostring(num)
 	local l = 0
 	local h = 0
